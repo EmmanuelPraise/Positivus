@@ -89,7 +89,10 @@ nav ul li a:hover {
   font-weight: 600;
 }
 
-nav ul li button, .get-started, .service-cta-text button, .team-cta button {
+nav ul li button,
+.get-started,
+.service-cta-text button,
+.team-cta button {
   border: 1px solid var(--secondary-color);
   background-color: var(--background-color);
   border-radius: 10px;
@@ -113,7 +116,8 @@ nav ul li button:hover {
   gap: 40px;
 }
 
-.hero-content, .hero-image {
+.hero-content,
+.hero-image {
   flex: 50%;
 }
 
@@ -130,13 +134,17 @@ nav ul li button:hover {
   margin-bottom: 20px;
 }
 
-.get-started, .service-cta-text button, .team-cta button {
+.get-started,
+.service-cta-text button,
+.team-cta button {
   color: var(--background-color);
   background-color: var(--secondary-color);
   width: 50%;
 }
 
-.get-started:hover, .service-cta-text button:hover, .team-cta button:hover {
+.get-started:hover,
+.service-cta-text button:hover,
+.team-cta button:hover {
   border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
   background-color: var(--background-color);
@@ -166,26 +174,134 @@ nav ul li button:hover {
   filter: grayscale(0);
 }
 
-.service-list{
+/* Services Section */
+.service-list {
   display: grid;
   grid-template-columns: auto auto;
-  /* grid-auto-rows: 50%; */
+  grid-auto-rows: 310px;
   gap: 40px;
   margin-bottom: 50px;
 }
 
 .service-card {
+  position: relative;
   max-width: 100%;
   height: auto;
   border-radius: 20px;
   background-color: var(--accent-color);
-  padding: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   /* box-shadow: 20px 20px 0 5px #000; */
 }
 
-.service-item {
+.service-card:nth-child(1),
+.service-card:nth-child(4) {
+  background-color: var(--accent-color);
+
+  .service-title span {
+    background-color: var(--primary-color);
+  }
+
+  .learn-more {
+    color: var(--secondary-color);
+  }
+
+  .arrow-north-east {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+.service-card:nth-child(2),
+.service-card:nth-child(5) {
+  background-color: var(--primary-color);
+
+  .service-title span {
+    background-color: var(--background-color);
+  }
+
+  .learn-more {
+    color: var(--secondary-color);
+  }
+
+  .arrow-north-east {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+}
+
+.service-card:nth-child(3n) {
+  background-color: var(--secondary-color);
+
+  .service-title span {
+    background-color: var(--primary-color);
+  }
+
+  .learn-more {
+    color: var(--primary-color);
+  }
+
+  .arrow-north-east {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+}
+
+.service-item,
+.service-icon {
+  flex: 100%;
+}
+
+.service-title {
+  margin-bottom: 20px;
+}
+
+.service-title span {
+  display: block;
+  font-size: 28px;
+  font-weight: 500;
+  border-radius: 10px;
+  max-width: fit-content;
+  padding: 5px;
+}
+
+.learn-more {
+  position: absolute;
+  bottom: 40px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.arrow-north-east {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.service-icon img {
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -223,49 +339,95 @@ nav ul li button:hover {
   position: absolute;
 } */
 
+/* Use Cases Section */
 .use-case-list {
   max-width: 100%;
   background-color: var(--secondary-color);
   color: var(--accent-color);
-  padding: 20px;
-  border-radius: 20px;
+  padding: 70px;
+  border-radius: 40px;
   display: flex;
 }
 
 .use-case-item {
-  margin-right: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  padding: 0 40px;
+  width: 33%;
 }
 
+.use-case-item:last-child {
+  border-right: none;
+}
+
+.use-case-item p {
+  margin-bottom: 20px;
+}
+
+.use-case-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+/* Working Process Section */
 details {
   border: 1px solid var(--secondary-color);
   background-color: var(--accent-color);
-  border-radius: 20px;
-  padding: 1rem;
+  border-radius: 40px;
+  padding: 50px;
+  width: 100%;
+  height: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
   margin-bottom: 40px;
 }
 
 summary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-weight: 500;
-  font-size: 16px;
-  color: #3f3d56;
+  font-size: 28px;
+  color: var(--secondary-color);
   cursor: pointer;
   list-style: none;
   position: relative;
-  padding-right: 1.5rem;
+}
+
+details>summary>span {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  padding: 0 10px 0 0;
 }
 
 summary::after {
   content: "+";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 20px;
+  width: 20px;
+  height: 20px;
   position: absolute;
   right: 0;
-  font-size: 20px;
+  font-size: 40px;
+  font-weight: 600;
   transition: transform 0.3s ease;
 }
 
 details[open] {
   background-color: var(--primary-color);
+
+  summary {
+    margin-bottom: 40px;
+  }
 }
 
 details[open] summary::after {
@@ -273,8 +435,35 @@ details[open] summary::after {
 }
 
 details p {
-  margin-top: 0.5rem;
-  font-size: 14px;
-  color: #555;
+  padding-top: 40px;
+  font-size: 18px;
+  color: var(--secondary-color);
   border-top: 1px solid var(--secondary-color);
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.team-card {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card .card-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 20px;
+  margin-bottom: 20px
 }
