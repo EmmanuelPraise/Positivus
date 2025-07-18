@@ -9,6 +9,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/mobile.css" />
     <title>Positivus Landing Page Design</title>
   </head>
 
@@ -23,6 +24,7 @@
               alt="Positivus Logo"
           /></a>
         </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
         <ul class="nav-menu">
           <li><a href="/assets/templates/about-us.html">About Us</a></li>
           <li><a href="/assets/templates/services.html">Services</a></li>
@@ -625,5 +627,14 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
+
+    <script>
+      const toggleBtn = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector("nav ul");
+
+      toggleBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

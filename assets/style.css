@@ -33,6 +33,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .section-header {
   display: flex;
   flex-direction: row;
@@ -66,9 +71,13 @@ nav {
   margin-bottom: 50px;
 }
 
-.logo {
-  width: 20px;
-  height: 20px;
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
 }
 
 nav ul {
@@ -575,7 +584,7 @@ input[type="radio"]:checked::before {
   display: block;
   width: 15px;
   height: 15px;
-  background: var(--primary-color); /* Red inner circle */
+  background: var(--primary-color);
   border-radius: 50%;
   position: absolute;
   top: 50%;
