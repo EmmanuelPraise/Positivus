@@ -18,15 +18,15 @@ This project was created to practice front-end development and design implementa
 
 ---
 
-## 🛠 Tools & Technologies Used
+## Tools & Technologies Used
 
 - **HTML5** – Structure and semantics of the webpage  
 - **CSS3** – Styling and layout (including Flexbox & Grid)  
 - **JavaScript (Vanilla)** – Interactivity and behavior (e.g., mobile menu toggle)
 
----
+<!-- --- -->
 
-## Project Structure
+<!-- ## Project Structure
 Positivus/
 │
 ├── index.html # Main HTML file
@@ -34,7 +34,7 @@ Positivus/
 │ ├── /img # Image files (e.g., logos, icons, illustrations)
 | └── /styles
 │       └── style.css # CSS styling
-└── script.js # JavaScript for interactivity
+└── script.js # JavaScript for interactivity -->
 
 
 ---
