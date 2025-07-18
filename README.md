@@ -8,7 +8,7 @@ This project was created to practice front-end development and design implementa
 
 ## Live Demo
 
-[View the Live Site Here](https://your-deployment-link.com)
+[View the Live Site Here](https://positivus-landing-page-navy.vercel.app/)
 
 ---
 
