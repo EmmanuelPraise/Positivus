@@ -64,7 +64,7 @@ img {
 
 /* Navbar Section */
 nav {
-  color: #000;
+  color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   flex-direction: row;

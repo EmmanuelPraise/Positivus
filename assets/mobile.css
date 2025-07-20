@@ -1,5 +1,4 @@
 /* Responsive Styles */
-/* Responsive Styles for All Sections */
 @media screen and (max-width: 1024px) {
   body {
     padding: 20px 10px 0 10px;
@@ -39,7 +38,6 @@
   .get-started {
     width: 100%;
   }
-  
 }
 
 /* Tablet and Mobile Adjustments */
