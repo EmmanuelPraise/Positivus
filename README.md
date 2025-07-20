@@ -8,7 +8,7 @@ This project was created to practice front-end development and design implementa
 
 ## Live Demo
 
-[View the Live Site Here](https://your-deployment-link.com)
+[View the Live Site Here](https://positivus-landing-page-navy.vercel.app/)
 
 ---
 
@@ -23,19 +23,6 @@ This project was created to practice front-end development and design implementa
 - **HTML5** – Structure and semantics of the webpage  
 - **CSS3** – Styling and layout (including Flexbox & Grid)  
 - **JavaScript (Vanilla)** – Interactivity and behavior (e.g., mobile menu toggle)
-
-<!-- --- -->
-
-<!-- ## Project Structure
-Positivus/
-│
-├── index.html # Main HTML file
-├── /assets
-│ ├── /img # Image files (e.g., logos, icons, illustrations)
-| └── /styles
-│       └── style.css # CSS styling
-└── script.js # JavaScript for interactivity -->
-
 
 ---
 
@@ -60,7 +47,7 @@ To run the project locally:
 
 2. Navigate into the project folder:
 ```bash
-cd positivus-landing-page
+cd positivus
 ```
 3. Open index.html in your browser.
 
