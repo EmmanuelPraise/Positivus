@@ -21,7 +21,7 @@
 body {
   background-color: var(--background-color);
   color: var(--secondary-color);
-  padding: 40px 100px 0 100px;
+  padding: 100px 100px 0 100px;
 }
 
 /* General Styles */
@@ -63,10 +63,19 @@ img {
 }
 
 /* Navbar Section */
-nav {
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1002;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 15px 100px;
   color: var(--secondary-color);
+  background-color: var(--background-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   margin-bottom: 50px;
 }
@@ -82,7 +91,7 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   align-items: center;
   list-style: none;
   gap: 40px;
@@ -161,6 +170,17 @@ nav ul li button:hover {
 .hero-image img {
   max-width: 100%;
   height: auto;
+}
+
+.hero-image-desktop {
+  display: block;
+}
+.hero-image-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+ 
 }
 
 /* Brands Section */
@@ -662,7 +682,6 @@ footer {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-self: center;
   justify-content: center;
   align-items: center;
   gap: 20px;

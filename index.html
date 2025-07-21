@@ -15,7 +15,6 @@
 
   <body>
     <header class="header">
-      <!-- Navbar Section -->
       <nav class="navbar">
         <div class="logo">
           <a href="/"
@@ -24,7 +23,13 @@
               alt="Positivus Logo"
           /></a>
         </div>
-        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
         <ul class="nav-menu">
           <li><a href="/assets/templates/template.html">About Us</a></li>
           <li><a href="/assets/templates/template.html">Services</a></li>
@@ -43,6 +48,12 @@
           <h1 class="hero-title">
             Navigating the digital landscape for success
           </h1>
+          <div class="hero-image hero-image-mobile">
+            <img
+              src="/assets/img/Illustration.png"
+              alt="Digital Strategy Illustration"
+            />
+          </div>
           <p class="hero-subtitle">
             Our digital marketing agency helps businesses grow and succeed
             online through a range of services including SEO, PPC, social media
@@ -50,7 +61,7 @@
           </p>
           <button class="get-started">Book a consultation</button>
         </div>
-        <div class="hero-image">
+        <div class="hero-image hero-image-desktop">
           <img
             src="/assets/img/Illustration.png"
             alt="Digital Strategy Illustration"
@@ -627,14 +638,6 @@
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
-
-    <script>
-      const toggleBtn = document.querySelector(".nav-toggle");
-      const navLinks = document.querySelector("nav ul");
-
-      toggleBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
