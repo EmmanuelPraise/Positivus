@@ -27,3 +27,9 @@ const header = document.querySelector(".header");
           }
         }
       });
+
+let pixel_value = 32; // Example pixel value
+let base_html_font_size = 16; // Base font size in pixels, typically 16
+
+let rem_value = pixel_value / base_html_font_size
+console.log(rem_value + " rem");
