@@ -8,8 +8,8 @@
       href="/assets/img/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/assets/style.css" />
-    <link rel="stylesheet" href="/assets/mobile.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/mobile.css" />
     <title>Positivus Coming soon Design</title>
 
     <style>
@@ -18,7 +18,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 40px;
+        border-radius: var(--fs-3xl);
       }
 
       .hero-content h1 {
@@ -33,7 +33,6 @@
 
   <body>
     <header class="header">
-      <!-- Navbar Section -->
       <nav class="navbar">
         <div class="logo">
           <a href="/"
@@ -42,13 +41,19 @@
               alt="Positivus Logo"
           /></a>
         </div>
-        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
         <ul class="nav-menu">
-          <li><a href="/assets/templates/template.html">About Us</a></li>
-          <li><a href="/assets/templates/template.html">Services</a></li>
-          <li><a href="/assets/templates/template.html">Use Cases</a></li>
-          <li><a href="/assets/templates/template.html">Pricing</a></li>
-          <li><a href="/assets/templates/template.html">Blog</a></li>
+          <li><a href="/assets/html/template.html">About Us</a></li>
+          <li><a href="/assets/html/template.html">Services</a></li>
+          <li><a href="/assets/html/template.html">Use Cases</a></li>
+          <li><a href="/assets/html/template.html">Pricing</a></li>
+          <li><a href="/assets/html/template.html">Blog</a></li>
           <li><button>Request a Quote</button></li>
         </ul>
       </nav>
@@ -70,13 +75,13 @@
           ><img src="/assets/img/Positivus-logo-light.png" alt="Positivus Logo"
         /></a>
         <ul class="footer-menu">
-          <li><a href="/assets/templates/template.html">About Us</a></li>
-          <li><a href="/assets/templates/template.html">Services</a></li>
-          <li><a href="/assets/templates/template.html">Use Cases</a></li>
-          <li><a href="/assets/templates/pricing.html">Pricing</a></li>
-          <li><a href="/assets/templates/blog.html">Blog</a></li>
+          <li><a href="/assets/html/template.html">About Us</a></li>
+          <li><a href="/assets/html/template.html">Services</a></li>
+          <li><a href="/assets/html/template.html">Use Cases</a></li>
+          <li><a href="/assets/html/template.html">Pricing</a></li>
+          <li><a href="/assets/html/template.html">Blog</a></li>
         </ul>
-        <ul class="footer-socials">
+        <ul class="footer-socials social-desktop">
           <li>
             <a href="#"
               ><img src="/assets/img/linkedin-icon.svg" alt="LinkedIn"
@@ -118,19 +123,24 @@
           />
         </form>
       </div>
+      <ul class="footer-socials social-mobile">
+        <li>
+          <a href="#"
+            ><img src="/assets/img/linkedin-icon.svg" alt="LinkedIn"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/img/facebook.svg" alt="Facebook" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/assets/img/twitter.svg" alt="Twitter" /></a>
+        </li>
+      </ul>
       <div class="footer-legal">
         <p>&copy; 2023 Positivus. All rights reserved.</p>
         <a href="#">Privacy Policy</a>
       </div>
     </footer>
-
-    <script>
-      const toggleBtn = document.querySelector(".nav-toggle");
-      const navLinks = document.querySelector("nav ul");
-
-      toggleBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
